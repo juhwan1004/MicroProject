@@ -1,0 +1,18 @@
+@charset "UTF-8";
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+table {
+  border: 1px solid #000;
+  font-size: 14px;
+}
+th {
+  background: #eee;
+}
+td {
+  background: #aaa;
+}
