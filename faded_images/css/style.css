@@ -1,0 +1,62 @@
+html {
+  font-size: 16px; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+h1 {
+  text-align: center; }
+
+.rollover-window {
+  display: flex;
+  margin: 0 auto;
+  width: 900px;
+  height: 300px;
+  overflow: hidden; }
+
+.rollover-wrapper {
+  position: relative;
+  width: 33.33333%;
+  height: 600px;
+  background-color: #000;
+  color: #fff; }
+
+.rollover-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background-color: transparent; }
+
+.rollover-wrapper:hover {
+  transform: translateY(-50%);
+  transition: all 2s ease-in-out; }
+
+.rollover-wrapper:hover .rollover-img::after {
+  transition: all 2s ease-in-out;
+  background-color: black; }
+
+.rollover-img {
+  height: 300px; }
+
+.no1 {
+  background-image: url("../images/boy.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.no2 {
+  background-image: url("../images/oldcar.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.no3 {
+  background-image: url("../images/turtle.jpg");
+  background-size: cover;
+  background-position: center center; }
