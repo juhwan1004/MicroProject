@@ -1,0 +1,164 @@
+/* RESET CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+html {
+	font-size: 16px;
+  color: #0066ff;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 80%;
+	height: 100vh;
+	margin: 0 auto;
+}
+h1 {
+	width: 100%;
+	text-align: center;
+}
+/* RESET CSS */
+
+/* Shared Styles */
+button {
+  margin: 2em;
+  background: transparent;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.fill-btn, .line-btn, .split-line-btn {
+	position: relative;
+	padding: 1em 1.2em;
+}
+
+.fill-btn::after, .line-btn::after, .split-line-btn::after {
+	content: '';
+	position: absolute;
+	transition: all 1s ease-in-out;
+	z-index: -10;
+}
+/* Shared Styles */
+
+/* Fill Button Styles */
+.fill-btn {
+	border: 3px solid #0066ff;
+}
+
+.fill-btn:hover {
+	transition: all 1s ease-in-out;	
+	color: #fff;
+}
+
+.to-left::after {
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background: #0066ff;
+}
+
+.to-left:hover::after {
+	left: 0;
+}
+
+.to-right::after {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	background: #0066ff;
+}
+
+.to-right:hover::after {
+	right: 0;
+}
+
+.to-bottom::after {
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background: #0066ff;
+}
+
+.to-bottom:hover::after {
+	bottom: 0;
+}
+
+.to-top::after {
+	top: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #0066ff;
+}
+
+.to-top:hover::after {
+	top: 0;
+}
+/* Fill Button Styles */
+
+/* Line Button Styles */
+.line-to-right::after {
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	background: #0066ff;
+}
+
+.line-to-right:hover::after {
+	right: 0;
+}
+
+.line-to-left::after {
+	height: 3px;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background: #0066ff;
+}
+
+.line-to-left:hover::after {
+	left: 0;
+}
+/* Line Button Styles */
+
+/* Split Line Button Styles */
+.to-outside::after {
+	height: 3px;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
+	background: #0066ff;
+}
+.to-outside:hover::after {
+	left: 0;
+	right: 0;
+}
+
+.to-inside::after {
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #0066ff;
+}
+.to-inside:hover::after {
+	left: 50%;
+	right: 50%;
+}
+/* Split Line Button Styles */
