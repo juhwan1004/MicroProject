@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* RESET CSS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box
+}
+html { font-size: 16px }
+body { margin: 0 }
+h1,h2,h3,figure {	margin: 0 }
+fieldset { border: none }
+/* RESET CSS */
+
+/* Readable hidden */
+.readable-hidden {
+	position: absolute
+	text-indent: -100%
+	overflow: hidden
+}
+
+/* 공통 스타일 영역 */
+
+/* 공통 스타일 영역 */
+
+@media screen and (max-width: 479px) {
+/* Mobile only */
+	body {
+		background: tomato
+	}
+	.header {
+		background: #181818
+	}
+	.logo {
+		color: #F67850
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 1199px)
+/* Tablet only */
+	body
+		background: lime
+
+@media screen and (min-width: 1200px)
+/* Desktop only */
+	body
+		background: skyblue

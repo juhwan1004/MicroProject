@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*
+	mb: mobile 4
+	tb: tablet 8
+	dk: desktop 12
+ */
+/* RESET CSS */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html { font-size: 16px; line-height: 1.5; }
+body { margin: 0; }
+h1, h2, h3, p, figure { margin: 0; }
+fieldset { border: none; }
+/* RESET CSS */
+
+/* Readable hidden */
+.readable-hidden {
+  position: absolute;
+  text-indent: -100%;
+  overflow: hidden; }
+
+/* Shared Styles Area */
+.photo-heading, .people-heading, .contact-heading {
+	height: 96px;
+	background: #eee;
+	text-align: center;
+}
+
+.map {
+	width: 100%;
+	height: 360px;	
+}
+.rwd-iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+/* Shared Styles Area */
+
+/* Media Query Area */
+@media screen and (max-width: 479px) {
+	/* Mobile only */
+  body { background: tomato; } 
+	.photo, .people, .contact {
+		/* mb,tb 양쪽 gutter */
+		padding: 0 20px;
+	}
+	.header {
+		height: 96px;
+		background: #aaa;
+		outline: 1px solid  #000;
+	}
+	.carousel {
+		height: 288px;
+		background: indigo;
+		outline: 1px solid  #000;
+	}
+	.photo figure {
+		position: relative;
+		height: 264px;
+		background: #D539C4;
+		outline: 1px solid  #000;
+	}
+	.photo1, .photo2 {
+		margin-bottom: 24px;
+	}
+	.photo3 {
+		margin-bottom: 48px;
+	}
+	.photo figcaption {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 48px;
+		background: #aaa;
+	}
+	.photo-desc {
+		display: none;
+	}
+	.image-slide {
+		height: 288px;
+		background: indigo;
+	}
+	.person1, .person2, .person3, .person4 {
+		display: flex;
+		padding: 12px 0;
+		margin-bottom: 24px;
+		outline: 1px solid  #000;
+		background: #D539C4;
+	}
+	.img-person {
+		width: 100px;
+		height: 100px;
+	}
+	.person-wrap {
+		padding: 12px 5px 12px 30px;
+	}
+
+	.contact-group {
+		padding: 0;
+		margin: 0;
+		font-size: 0;
+	}
+	.contact-name, .contact-email, .contact-msg, .contact-btn {
+		width: 100%;
+		border: none;
+		border-radius: 5px;
+		text-indent: 10px;
+	}
+	.contact-name, .contact-email, .contact-msg {
+		height: 48px;
+		margin-bottom: 24px;
+		border: 1px solid #aaa;
+	}
+	.contact-msg {
+		height: 240px;
+		padding-top: 5px;
+	}
+	.contact-btn {
+		height: 72px;
+		margin-bottom: 48px;
+		background: #181818;
+		color: #fff;
+		cursor: pointer;
+		font-size: 24px;
+	}
+	.footer {
+		height: 72px;
+		padding: 0 20px;
+		background: #aaa;
+	}
+	/* mb: Fluid Grid Layout */
+	/* padding gutter: 10px  */
+	.mb-1-4 { width:  25%; }
+	.mb-2-4 { width:  50%; }
+	.mb-3-4 { width:  75%; }
+	.mb-4-4 { width: 100%; }
+ }
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+	/* Tablet only */
+  body { background: lime; } 
+	.photo, .people, .contact {
+		/* mb,tb 양쪽 gutter */
+		padding: 0 20px;
+	}
+	.header {
+		height: 96px;
+		background: #aaa;
+		outline: 1px solid  #000;
+	}
+	.carousel {
+		height: 408px;
+		margin-bottom: 24px;
+		background: yellow;
+		outline: 1px solid  #000;
+	}
+	.photo figure {
+		display: flex;
+		flex-direction: column-reverse;
+		float: left;
+		background: #D539C4;
+		outline: 1px solid  #000;
+	}
+	.photo-img { order: 1; }
+	.photo-title { order: 3; }
+	.photo-desc { order: 2; }
+	.photo1, .photo2, .photo3 {
+		margin-bottom: 24px;
+	}
+	.photo1 {
+		height: 480px;
+	}
+	.photo2, .photo3 {
+		height: 384px;
+	}
+	.photo-title {
+		background: #aaa;
+	}
+	.photo-desc {
+		background: #aaa;
+	}
+	.image-slide {
+		height: 336px;
+		margin-bottom: 24px;
+		background: indigo;
+	}
+	.people-wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.person1, .person2, .person3, .person4 {
+		height: 264px;
+		margin-bottom: 24px;
+		background: #D539C4;
+		outline: 1px solid  #000;
+		text-align: center;
+	}
+/* contact 모듈로 만들기 */
+	.contact-group {
+		padding: 0;
+		margin: 0;
+		font-size: 0;
+		text-align: center;
+	}
+	.contact-name, .contact-email, .contact-msg, .contact-btn {
+		width: 100%;
+		border: none;
+		border-radius: 5px;
+		text-indent: 10px;
+	}
+	.contact-name, .contact-email, .contact-msg {
+		height: 48px;
+		margin-bottom: 24px;
+		border: 1px solid #aaa;
+	}
+	.contact-msg {
+		height: 240px;
+		padding-top: 5px;
+	}
+	.contact-btn {
+		width: 50%;
+		height: 72px;
+		margin-bottom: 48px;
+		background: #181818;
+		color: #fff;
+		cursor: pointer;
+		font-size: 24px;
+	}
+	/* contact 모듈로 만들기 */
+	/* footer 모듈로 만들기 */
+	.footer {
+		height: 72px;
+		padding: 0 20px;
+		background: #aaa;
+	}
+	/* footer 모듈로 만들기 */
+
+	/* tb: Fluid Grid Layout */
+	/* padding gutter: 10px  */
+	.tb-1-8 { width: 12.5%; }
+	.tb-2-8 { width:   25%; }
+	.tb-3-8 { width: 37.5%; }
+	.tb-4-8 { width:   50%; }
+	.tb-5-8 { width: 62.5%; }
+	.tb-6-8 { width:   75%; }
+	.tb-7-8 { width: 87.5%; }
+	.tb-8-8 { width:  100%; }
+}
+
+@media screen and (min-width: 1200px) {
+	/* Desktop only */
+  body { background: skyblue; } 
+
+	/* dk: Fixed Grid Layout */
+	/* margin gutter: 10px   */
+	.dk-1-12  { width:   80px; }
+	.dk-2-12  { width:  180px; }
+	.dk-3-12  { width:  280px; }
+	.dk-4-12  { width:  380px; }
+	.dk-5-12  { width:  480px; }
+	.dk-6-12  { width:  580px; }
+	.dk-7-12  { width:  680px; }
+	.dk-8-12  { width:  780px; }
+	.dk-9-12  { width:  880px; }
+	.dk-10-12 { width:  980px; }
+	.dk-11-12 { width: 1080px; }
+	.dk-12-12 { width: 1180px; }
+}
+/* Media Query Area */
+
+/* Grid System Area */
+
+.row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* Grid System Area */
