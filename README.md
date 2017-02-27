@@ -9,5 +9,5 @@ A very small projects in here
 
 ## 5. [Button Animation](https://juhwan1004.github.io/MicroProject/button_animation/)  
 
-## 6. [Font Controls](https://juhwan1004.github.io/MicroProject/font_controls/)
+## 6. [Font Controls](https://juhwan1004.github.io/MicroProject/font_controls/) 
 
