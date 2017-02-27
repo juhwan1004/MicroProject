@@ -4,9 +4,12 @@ var text_area = document.querySelector('.text');
 // RESET button
 var reset_btn = document.querySelector('.reset-btn');
 reset_btn.onclick = function() {
-	fontSize(16);
-	letterSpacing(0);
-	lineHeight(1.5);
+	font_size = 16;
+	letter_spacing_value = 0;
+	line_height_value = 1.5;
+	fontSize(font_size);
+	letterSpacing(letter_spacing_value);
+	lineHeight(line_height_value);
 }
 
 /* 공통 영역 */
