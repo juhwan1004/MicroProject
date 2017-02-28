@@ -20,6 +20,8 @@ body {
 	align-items: center;
 }
 .control-box {
+	display: flex;
+	align-items: center;
 	width: 650px;
 	margin: 10px 0;
 }
@@ -29,7 +31,7 @@ label {
 }
 button {
 	width: 30px;
-	height: 30px;
+	height: 30px;	
 	border: 2px solid #0066ff;
 	background: transparent;
 	font-size: 1.2rem;
@@ -37,14 +39,17 @@ button {
 	cursor: pointer;
 }
 button:active {
+	position: relative;
+	top: 1px;	
 	background: #0066ff;
 	color: #fff;
 }
 input {
 	width: 30px;
+	height: 30px;	
+	margin: 0 5px;	
 	font-size: 1.1rem;
 	line-height: 1.5;
-	padding: 0;
 	border: 2px solid #0066ff;
 	background: transparent;
 	color: #fff;

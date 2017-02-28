@@ -38,7 +38,7 @@ font_inc_btn.onclick = function() {
 	} else {
 		fontSize(font_size);
 	}
-
+	
 }
 // Font Size 감소
 font_dec_btn.onclick = function() {
