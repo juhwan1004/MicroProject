@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* RESET CSS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+body {
+	margin: 0;
+	background-color: #181818;
+}
+/* RESET CSS */
+
+/* 공통 스타일 */
+.wrapper {
+	min-height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+[class*="image-frame"] {
+	position: relative;
+	background-size: cover;
+	background-position: center center;	
+}
+.image-text {
+	position: absolute;
+	z-index: -10;
+}
+[class*="image-frame"]::after {
+	content:'';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0;
+	color: #fff;
+}
+[class*="image-frame"]:hover::after {
+	opacity: 0.8;
+	transition: all 0.4s ease-in-out;
+}
+/* 공통 스타일 */
+
+/* 이미지 처리 */
+.image-frame1::after  { content: 'BUILDINGS'; }
+.image-frame2::after  { content: 'FLIGHTS'; }
+.image-frame3::after  { content: 'FOREST'; }
+.image-frame4::after  { content: 'FRUITS'; }
+.image-frame5::after  { content: 'FRUITS'; }
+.image-frame6::after  { content: 'LANDSCAPE'; }
+.image-frame7::after  { content: 'LIVING ROOM'; }
+.image-frame8::after  { content: 'SNOW'; }
+.image-frame9::after  { content: 'VALLEY'; }
+.image-frame10::after { content: 'VENDING MACHINE'; }
+.image-frame11::after { content: 'WELCOME'; }
+.image-frame12::after { content: 'WATCH'; }
+
+.image-frame1  { background-image: url(../images/buildings.png);}
+.image-frame2  { background-image: url(../images/flights.png); }
+.image-frame3  { background-image: url(../images/forest.png); }
+.image-frame4  { background-image: url(../images/fruits1.png); }
+.image-frame5  { background-image: url(../images/fruits2.png); }
+.image-frame6  { background-image: url(../images/landscape.png); }
+.image-frame7  { background-image: url(../images/living_room.png); }
+.image-frame8  { background-image: url(../images/snow.png); }
+.image-frame9  { background-image: url(../images/valley.png); }
+.image-frame10 { background-image: url(../images/vending_machine.png); }
+.image-frame11 { background-image: url(../images/welcome.png); }
+.image-frame12 { background-image: url(../images/wrist_watch.png); }
+/* 이미지 처리 */
+
+@media screen and ( max-width: 779px ) { 
+/* Mobile view: 2단 이미지 */
+	.wrapper {
+		width: 100%;
+	}	
+	[class*="image-frame"] {
+		width: 50%;
+		padding-bottom: 50%;
+	}
+}
+
+@media screen and ( min-width: 780px ) and ( max-width: 959px ) {
+	/* Tablet view: 3단 이미지 */
+	.wrapper {
+		width: 90%;
+	}
+	[class*="image-frame"] {
+		width: 33.33333%;
+		padding-bottom: 33.33333%;
+	}
+}
+
+@media screen and ( min-width: 960px ) { 
+/* Desktop view: 4단 이미지 */
+	.wrapper {
+		width: 960px;
+	}
+	[class*="image-frame"] {
+		width: 25%;
+		padding-bottom: 25%;
+	}
+}
