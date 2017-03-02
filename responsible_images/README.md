@@ -1,5 +1,5 @@
 # Responsible Images
-
+각각 다른 크기의 이미지 12개를 사용하여 정사각형 형태의 반응형 이미지 만들기
 ### Spec
 
 **Break Point**: `780px`, `960px`  
@@ -14,7 +14,7 @@
 
 ---
 
-- div.image-frame의 `background-image`를 사용여 이미지 삽입  
+- `div.image-frame`의 `background-image`를 사용하여 이미지 삽입  
 - `display: flex`, `flex-wrap: wrap`을 사용하여 이미지 정렬  
 - 가상요소를 사용하여 `hover`애니메이션 구현  
 
@@ -48,5 +48,5 @@ width의 경우 %를 사용하여 부모의 너비에 따른 반응형 가로 �
 
 ### 추가할 사항   
 
-[ ] sass로 변경하기 
+* [ ] sass로 변경하기 
 
