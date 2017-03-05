@@ -1,5 +1,5 @@
 # Responsible Images
-
+각각 다른 크기의 이미지 12개를 사용하여 정사각형 형태의 반응형 이미지 만들기
 ### Spec
 
 **Break Point**: `780px`, `960px`  
@@ -14,7 +14,7 @@
 
 ---
 
-- div.image-frame의 `background-image`를 사용여 이미지 삽입  
+- `div.image-frame`의 `background-image`를 사용하여 이미지 삽입  
 - `display: flex`, `flex-wrap: wrap`을 사용하여 이미지 정렬  
 - 가상요소를 사용하여 `hover`애니메이션 구현  
 
@@ -36,7 +36,9 @@
 
 width의 경우 %를 사용하여 부모의 너비에 따른 반응형 가로 너비를 구현할 수 있지만 %사용에 이슈가 있는 height의 경우 어떻게 화면너비에 맞춰 정사각형의 일정 비율로 줄어들게 할것인가?  
 
-- padding-top: 50% 값을 주어 반응형 height에 대한 이슈 해결  
+- padding의 %값은 자신을 포함하는 부모의 content box가 기준이 된다.
+- width의 %값 역시 자신을 포함하는 부모의 content box가 기준이 된다.
+- padding-top: 50% 값을 주어 width와 같은 비율을 유지하여 정사각형 이미지를 만들 수 있었다.  
 
 정상적으로 미디어 쿼리를 작성했지만 계속해서 모바일 뷰의 스타일만 적용되는 현상이 생김  
 
@@ -48,5 +50,5 @@ width의 경우 %를 사용하여 부모의 너비에 따른 반응형 가로 �
 
 ### 추가할 사항   
 
-[ ] sass로 변경하기 
-
+* [ ] sass로 변경하기 
+* [ ] 반복되는 CSS 개선하기 

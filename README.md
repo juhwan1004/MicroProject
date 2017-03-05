@@ -17,6 +17,9 @@ A very small projects in here
 #### [[repo link]](https://github.com/juhwan1004/MicroProject/tree/gh-pages/button_animation/)  
 ---
 ## 6. [Font Controls](https://juhwan1004.github.io/MicroProject/font_controls/)  
-#### [[repo link]](https://github.com/juhwan1004/MicroProject/tree/gh-pages/font_controls)  
+#### [[repo link]](https://github.com/juhwan1004/MicroProject/tree/gh-pages/font_controls/)  
+---
+## 7. [Responsible Images](https://juhwan1004.github.io/MicroProject/responsible_images/)  
+#### [[repo link]](https://github.com/juhwan1004/MicroProject/tree/gh-pages/responsible_images/)  
 ---
 
