@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Audio Control</title>
+	<link rel="stylesheet" type="text/css" href="css/audio_control.css">
+	<link rel="stylesheet" type="text/css" href="css/bulma.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="control-wrapper">
+ 			<div class="seekbar">
+        <div class="seekbar-progress"></div>
+      </div>
+			<button class="button is-outlined is-success play">play</button>
+			<button class="button is-outlined is-warning pause">pause</button>
+			<button class="button is-outlined is-danger stop">stop</button>
+	</div>
+  <div class="audio-time">
+  	<span class="audio-time-current">00:00</span> <span class="audio-time-divider">|</span>
+  	<span class="audio-time-total">00:00</span>
+	</div>	
+	<script src="js/audio_extension.js"></script>
+	<script src="js/audio_control.js"></script>
+</body>
+</html>
