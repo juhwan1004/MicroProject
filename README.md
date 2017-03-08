@@ -23,3 +23,8 @@ A very small projects in here
 #### [[repo link]](https://github.com/juhwan1004/MicroProject/tree/gh-pages/responsible_images/)  
 ---
 
+## 8. [Music Player](https://juhwan1004.github.io/MicroProject/music_player/)
+
+#### [[repo link]](https://github.com/juhwan1004/MicroProject/tree/gh-pages/music_player/)
+
+---
